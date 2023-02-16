@@ -53,3 +53,4 @@ GM_registerMenuCommand("STUFF Assetnumber Check", function() {
     var url = "https://stuff.amazon.com/#/search?query=" + selectedText + "&Page=1&Advanced=false&Department=IT&Site=SYR1&Status=AVAILABLE%7CDEPLOYED%7CDEPLOYED_TO_USER%7CIN_LIQUIDATION%7CIN_RMA%7CIN_TRANSFER%7CPENDING_VERIFICATION%7CSHIPPED_FOR_LIQUIDATION%7CALLOCATED";
     window.open(url,'_blank');
 });
+//===========================================================================================//
