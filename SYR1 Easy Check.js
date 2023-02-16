@@ -4,8 +4,8 @@
 // @version      2023.1.2
 // @description  Still working on this dont get pissed if it messes up
 // @author       Bishal Lamichhane
-// @updateURL    https://quip-amazon.com/EGhnARWzeTMa/-UserScript-name-SYR1
-// @downloadURL  https://quip-amazon.com/EGhnARWzeTMa/-UserScript-name-SYR1
+// @updateURL    https://raw.githubusercontent.com/Bishal315/SYRContext/main/SYR1%20Easy%20Check.js
+// @downloadURL  https://raw.githubusercontent.com/Bishal315/SYRContext/main/SYR1%20Easy%20Check.js
 // @match        *://*/*
 // @grant        GM_registerMenuCommand
 // ==/UserScript==
@@ -48,7 +48,7 @@ GM_registerMenuCommand("Phonetool Check", function() {
     var url = "https://phonetool.amazon.com/users/" + selectedText;
     window.open(url,'_blank');
 });
-GM_registerMenuCommand("Stuff ID Check", function() {
+GM_registerMenuCommand("STUFF Assetnumber Check", function() {
     var selectedText = window.getSelection().toString() || getUsername();
     var url = "https://stuff.amazon.com/#/search?query=" + selectedText + "&Page=1&Advanced=false&Department=IT&Site=SYR1&Status=AVAILABLE%7CDEPLOYED%7CDEPLOYED_TO_USER%7CIN_LIQUIDATION%7CIN_RMA%7CIN_TRANSFER%7CPENDING_VERIFICATION%7CSHIPPED_FOR_LIQUIDATION%7CALLOCATED";
     window.open(url,'_blank');
