@@ -4,8 +4,8 @@
 // @version      2023.1.4
 // @description  Still working on this dont get pissed if it messes up
 // @author       Bishal L
-// @updateURL    https://raw.githubusercontent.com/Bishal315/SYRContext/main/SYR1%20Easy%20Check.js
-// @downloadURL  https://raw.githubusercontent.com/Bishal315/SYRContext/main/SYR1%20Easy%20Check.js
+// @updateURL    https://github.com/Bishal315/SYRContext/blob/main/SYR1%20Easy%20Check.js
+// @downloadURL  https://github.com/Bishal315/SYRContext/blob/main/SYR1%20Easy%20Check.js
 // @match        *://*/*
 // @grant        GM_registerMenuCommand
 // ==/UserScript==
