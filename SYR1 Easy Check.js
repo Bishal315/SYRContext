@@ -1,7 +1,7 @@
 //==UserScript==
 // @name        SYR1 Easy Check
 // @namespace    SYR1
-// @version      2023.1.2
+// @version      2023.1.4
 // @description  Still working on this dont get pissed if it messes up
 // @author       Bishal L
 // @updateURL    https://raw.githubusercontent.com/Bishal315/SYRContext/main/SYR1%20Easy%20Check.js
