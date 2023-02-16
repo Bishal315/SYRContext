@@ -3,7 +3,7 @@
 // @namespace    SYR1
 // @version      2023.1.2
 // @description  Still working on this dont get pissed if it messes up
-// @author       Bishal Lamichhane
+// @author       Bishal L
 // @updateURL    https://raw.githubusercontent.com/Bishal315/SYRContext/main/SYR1%20Easy%20Check.js
 // @downloadURL  https://raw.githubusercontent.com/Bishal315/SYRContext/main/SYR1%20Easy%20Check.js
 // @match        *://*/*
