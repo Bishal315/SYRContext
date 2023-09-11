@@ -36,25 +36,25 @@ GM_registerMenuCommand("Midway Key Check", function() {
     var url = "https://register.midway-auth.amazon.com/nextgen/user/show/" + selectedText + "?show-all=true";
     window.open(url,'_blank');
 });
-
+//This will check the users ID
 GM_registerMenuCommand("User ID check", function() {
     var selectedText = window.getSelection().toString() || getUsername();
     var url = "https://ithelp.corp.amazon.com/checkid/" + selectedText;
     window.open(url,'_blank');
 });
+//This will check the users Phonetool (must have a phonetool
 GM_registerMenuCommand("Phonetool Check", function() {
     var selectedText = window.getSelection().toString() || getUsername();
     var url = "https://phonetool.amazon.com/users/" + selectedText;
     window.open(url,'_blank');
 });
-
-https://website.taka.fc.a2z.com/clients/syr1/64c901debd9c/
+//This will send a Temp Pin to users, if their zukey wont go through.
 GM_registerMenuCommand("Send Midway PIN", function() {
     var selectedText = window.getSelection().toString() || getUsername();
     var url = "https://register.midway-auth.amazon.com/nextgen/user/set-timed-pin/" + selectedText;
     window.open(url,'_blank');
 });
-
+//Check Taka using MAC
 GM_registerMenuCommand("Taka Check [MAC]", function() {
     var selectedText = window.getSelection().toString() || getUsername();
     var url = "https://website.taka.fc.a2z.com/clients/syr1/" + selectedText;
