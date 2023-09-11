@@ -31,26 +31,33 @@ function getUsername() {
 
     //this thing will check if the text is highlighted and it will grab said highlighted text & it can be ignored if you go into simticket and just rightclick and click midway it will grab the ticket creator details
 
-GM_registerMenuCommand("Midway Check", function() {
+GM_registerMenuCommand("Midway Key Check", function() {
     var selectedText = window.getSelection().toString() || getUsername();
     var url = "https://register.midway-auth.amazon.com/nextgen/user/show/" + selectedText + "?show-all=true";
     window.open(url,'_blank');
 });
 
-GM_registerMenuCommand("ID check", function() {
+GM_registerMenuCommand("User ID check", function() {
     var selectedText = window.getSelection().toString() || getUsername();
     var url = "https://ithelp.corp.amazon.com/checkid/" + selectedText;
     window.open(url,'_blank');
 });
-
 GM_registerMenuCommand("Phonetool Check", function() {
     var selectedText = window.getSelection().toString() || getUsername();
     var url = "https://phonetool.amazon.com/users/" + selectedText;
     window.open(url,'_blank');
 });
-GM_registerMenuCommand("STUFF Assetnumber Check", function() {
+
+https://website.taka.fc.a2z.com/clients/syr1/64c901debd9c/
+GM_registerMenuCommand("Send Midway PIN", function() {
     var selectedText = window.getSelection().toString() || getUsername();
-    var url = "https://stuff.amazon.com/#/search?query=" + selectedText + "&Page=1&Advanced=false&Department=IT&Site=SYR1&Status=AVAILABLE%7CDEPLOYED%7CDEPLOYED_TO_USER%7CIN_LIQUIDATION%7CIN_RMA%7CIN_TRANSFER%7CPENDING_VERIFICATION%7CSHIPPED_FOR_LIQUIDATION%7CALLOCATED";
+    var url = "https://register.midway-auth.amazon.com/nextgen/user/set-timed-pin/" + selectedText;
+    window.open(url,'_blank');
+});
+
+GM_registerMenuCommand("Taka Check [MAC]", function() {
+    var selectedText = window.getSelection().toString() || getUsername();
+    var url = "https://website.taka.fc.a2z.com/clients/syr1/" + selectedText;
     window.open(url,'_blank');
 });
 //===========================================================================================//
