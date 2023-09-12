@@ -17,15 +17,26 @@
 //===========================================================================================//
 
 function getUsername() {
-    var usernameContainer = document.querySelector('.on-behalf-of, .on-behalf-of-container');
+    var usernameContainer = document.querySelector('.textbox, .user_name);
     //this shit is checking the div container so it can find username text content
-    //its checking River ticket creations and the other way.
     if (!usernameContainer) {
         return null;
     }
-    return usernameContainer.querySelector('.user-name').textContent;
-    //this is grabbing the username from the class .user-name ^
+    return usernameContainer.querySelector('value').textContent;
+    // This is grabbing the username from the class .user-name ^ 
+    // This will most likely work in some cases but not always, as it was intended for SIM T user copy (which we no longer use SIMT)
 }
+
+
+
+
+<input name="user_name" placeholder="—" readonly="" maxlength="40" role="textbox" type="text" id="cqj4pcigev5-362-detail_tab_column_layout_section_0_string_user_name" class="sn-el-input" value="trtibbit">
+
+
+
+
+
+
 
     //this thing will check if the text is highlighted and it will grab said highlighted text & it can be ignored if you go into simticket and just rightclick and click midway it will grab the ticket creator details
 
@@ -40,7 +51,7 @@ GM_registerMenuCommand("User ID check", function() {
     var url = "https://ithelp.corp.amazon.com/checkid/" + selectedText;
     window.open(url,'_blank');
 });
-//This will check the users Phonetool (must have a phonetool
+//This will check the users Phonetool (must have a phonetool or be L3)
 GM_registerMenuCommand("Phonetool Check", function() {
     var selectedText = window.getSelection().toString() || getUsername();
     var url = "https://phonetool.amazon.com/users/" + selectedText;
