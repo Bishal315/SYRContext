@@ -17,7 +17,7 @@
 //===========================================================================================//
 
 function getUsername() {
-    var usernameContainer = document.querySelector('.textbox, .user_name);
+    var usernameContainer = document.querySelector('.textbox, .sn-el-input);
     //this shit is checking the div container so it can find username text content
     if (!usernameContainer) {
         return null;
