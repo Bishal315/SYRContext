@@ -17,16 +17,15 @@
 //===========================================================================================//
 
 function getUsername() {
-    var usernameContainer = document.querySelector('.textbox, .sn-el-input');
+    var usernameContainer = document.querySelector('.on-behalf-of, .on-behalf-of-container');
     //this shit is checking the div container so it can find username text content
+    //its checking River ticket creations and the other way.
     if (!usernameContainer) {
         return null;
     }
-    return usernameContainer.querySelector('value').textContent;
-    // This is grabbing the username from the class .user-name ^ 
-    // This will most likely work in some cases but not always, as it was intended for SIM T user copy (which we no longer use SIMT)
+    return usernameContainer.querySelector('.user-name').textContent;
+    //this is grabbing the username from the class .user-name ^
 }
-
 
 
 
