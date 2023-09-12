@@ -30,7 +30,7 @@ function getUsername() {
 
 
 
-<input name="user_name" placeholder="—" readonly="" maxlength="40" role="textbox" type="text" id="cqj4pcigev5-362-detail_tab_column_layout_section_0_string_user_name" class="sn-el-input" value="trtibbit">
+//<input name="user_name" placeholder="—" readonly="" maxlength="40" role="textbox" type="text" id="cqj4pcigev5-362-detail_tab_column_layout_section_0_string_user_name" class="sn-el-input" value="trtibbit">
 
 
 
