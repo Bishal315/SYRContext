@@ -68,4 +68,10 @@ GM_registerMenuCommand("Taka Check [MAC]", function() {
     var url = "https://website.taka.fc.a2z.com/clients/syr1/" + selectedText;
     window.open(url,'_blank');
 });
+//Check Taka using MAC
+GM_registerMenuCommand("INC to Service now", function() {
+    var selectedText = window.getSelection().toString() || getUsername();
+    var url = "https://sn.opstechit.amazon.dev/record?number=" + selectedText;
+    window.open(url,'_blank');
+});
 //===========================================================================================//
