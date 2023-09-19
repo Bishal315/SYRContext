@@ -23,6 +23,7 @@ function openUrlInNewTab(url) {
 }
 
 // Define constants for URLs
+const SITEINFO = "https://sites.opstech.a2z.com/sites/";
 const MIDWAY = "https://register.midway-auth.amazon.com/nextgen/user/show/";
 const CHECKID = "https://ithelp.corp.amazon.com/checkid/";
 const PHONETOOL = "https://phonetool.amazon.com/users/";
@@ -60,3 +61,8 @@ GM_registerMenuCommand("🎫 INC to Service now", function() {
     var selectedText = window.getSelection().toString() || getUsername();
     openUrlInNewTab(SERVICENOW + selectedText);
 });
+GM_registerMenuCommand("🏢 Site Info", function() {
+    var selectedText = window.getSelection().toString() || getUsername();
+    openUrlInNewTab(SITEINFO + selectedText);
+});
+
